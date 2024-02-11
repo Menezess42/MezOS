@@ -113,15 +113,15 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 		    terminator
 		    thunderbird
 		    chromium
-		   #discord
+		    discord
 		    arandr
 		    xfce.thunar
 		    xfce.tumbler
 		    mupdf
+		    spotify
 		    flameshot
-		   #spotif
-		   pavucontrol
-		   emacs
+		    pavucontrol
+		    emacs
 
     ];
   };
@@ -143,7 +143,7 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 	gcc
 	ripgrep
 	emacs
-	nvtop
+	#nvtop
 	btop
   ];
 
@@ -207,5 +207,6 @@ environment.interactiveShellInit = ''
 alias semacs='sudo -E emacs' 
 alias svim='sudo -E nvim' 
 '';
+programs.git = {enable = true;};
 
 }
