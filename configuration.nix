@@ -139,12 +139,13 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 	mesa
 	lshw
 	neovim
-	neofetch
 	gcc
 	ripgrep
 	emacs
 	#nvtop
 	btop
+	pfetch
+	neofetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
