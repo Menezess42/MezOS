@@ -209,5 +209,10 @@ alias semacs='sudo -E emacs'
 alias svim='sudo -E nvim' 
 '';
 programs.git = {enable = true;};
+ # Enable CUDA support
+  nixpkgs.config.packageOverrides = pkgs: {
+    nvidia-cuda = pkgs.nvidia_x11.override { cudaSupport = true; };
+    cudaDrv = pkgs.nvidia_x11.override { cudaSupport = true; };
+  };
 
 }
