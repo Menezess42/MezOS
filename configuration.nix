@@ -50,8 +50,10 @@ in
   };
 nix.settings.experimental-features = ["nix-command" "flakes"];
   services.xserver={
-	  layout="br";
-	  xkbVariant="";
+	  xkb={
+		  layout="br";
+		  variant="";
+	  };
 	  enable=true;
 	  windowManager.qtile = {
 		  enable=true; #extraPackages = python3Packages: with python3Packages; [ (qtile-extras.overridePythonAttrs(old: { disabledTestPaths = [ "test/widget/test_strava.py" ]; }))];
@@ -180,7 +182,9 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 	driSupport=true;
 	driSupport32Bit = true;
 	extraPackages = with pkgs; [vaapiVdpau nvidia-vaapi-driver intel-media-driver];
+	setLdLibraryPath = true;
   };
+
   hardware.nvidia={
   	modesetting.enable = true;
 	powerManagement.enable = true;
