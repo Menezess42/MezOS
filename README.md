@@ -26,4 +26,4 @@ Contributions are welcome! Feel free to fork this project and submit pull reques
 
 ## Contact
 
-For more information or to get in touch, you can [find me on GitHub](github.com/Menezess42) or [send an email](arielmenezess42@gmail.com).
+For more information or to get in touch, you can [find me on GitHub](https://www.github.com/Menezess42) or [send an email](arielmenezess42@gmail.com).
